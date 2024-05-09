@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif; 
+    box-sizing: border-box;
+}
+
+body{
+    background: #080808
+    color #fff;
+    background-image: url(images/newnewbackground.png);
+}
+#header{
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    
+    
+}
+.container{
+padding: 10px 10%;
+}
+nav{
+display: flex;
+align-items: center;
+justify-content: space-between;
+flex-wrap: wrap;
+}
+.logo{
+    width: 500px;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+    position: relative;
+
+}
+/* using a "ul li a" tag will only target the unordered list the the list and the words within the "a href"
+everything within this will make css changes to that only. */
+nav ul li a{
+color: red;
+text-decoration: none;
+font-size: 20px;
+}
+nav ul li::after{
+    content: '';
+    width: 0; /* make sure this width is set to 0 under the ::after so it will initially not show the line width.*/
+    height: 3px;
+    background: red;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s; /*using a transition will create the effect under the amount of time you desire.*/
+}
+
+/*use the hover after effect to create a hover over with the mouse. Make sure the width is 100% under this hover::after tag so the line will be showing.*/
+nav ul li:hover::after{
+    width: 100%;
+    
+}
+.header-text{
+    color: white;
+    margin-top: 5%;
+    font-size: 50px;
+}
+.header-text h1{
+    font-size: 60px;
+    margin-top: 30px;
+}
+.header-text h1 span{
+    color: red;
+
+}
+
+/*about section */
+#about{
+    padding: 80px 0;
+    color: white;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.about-col-1{
+    flex-basis: 35;
+}
+about-col-1 img {
+    width: 100%;
+    border-radius: 15px;
+}
+.about-col-2{
+    color: white;
+}
+    
