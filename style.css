@@ -85,13 +85,61 @@ nav ul li:hover::after{
     flex-wrap: wrap;
 }
 .about-col-1{
-    flex-basis: 35;
+    flex-basis: 35%;
 }
-about-col-1 img {
+.about-col-1 img {
     width: 100%;
     border-radius: 15px;
 }
 .about-col-2{
     color: white;
+    flex-basis: 60%;
+}
+.sub-title{
+
+font-size: 60px;
+font-weight: 600;
+color: white;
+}
+.p-title{
+    color: red;
+}
+.tab-titles{
+    display: flex;
+    margin: 20px 0 40px;
+}
+.tab-links{
+    margin: 50px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    position: relative;
+}
+.tab-links::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background:red;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+.tab-links.active-link::after{
+    width: 50%;
+}
+.tab-contents ul li{
+    list-style: none;
+    margin: 10px 0;
+}
+.tab-contents ul li span{
+    color: red;
+    font-size: 14px;
+}
+.tab-contents{
+    display: none;
+}
+.tab-contents.active-tab{
+    display: block;
 }
     
