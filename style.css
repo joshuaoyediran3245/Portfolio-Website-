@@ -8,7 +8,7 @@
 body{
     background: #080808
     color #fff;
-    background-image: url(images/newnewbackground.png);
+    background-image: url(images/peacfulimg.jpg);
 }
 #header{
     width: 100%;
@@ -40,7 +40,7 @@ nav ul li{
 /* using a "ul li a" tag will only target the unordered list the the list and the words within the "a href"
 everything within this will make css changes to that only. */
 nav ul li a{
-color: red;
+color: white;
 text-decoration: none;
 font-size: 20px;
 }
@@ -102,7 +102,8 @@ font-weight: 600;
 color: white;
 }
 .p-title{
-    color: red;
+    color: white;
+    font-size: 20px;
 }
 .tab-titles{
     display: flex;
