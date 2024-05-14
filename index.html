@@ -37,24 +37,24 @@
               
                <p class = "p-title">Nice to meet you, Joshua! I'm Joshua Oyediran, a Computer Science Major on track to graduate in 2025. Originally from Manhattan, New York, I grew up in Madison, New Jersey, but my family and I recently made the move to Alpharetta, Georgia. Aspiring to be a Software Engineer, I'm also drawn to fields like Data Science and Data Analytics within the vast realm of technology. When I'm not immersed in coding or exploring new tech, you'll find me hitting the gym, enjoying leisurely strolls in the park, or diving into extensive gaming sessions during my downtime. My faith in Jesus is fundamental to my identity, grounding me in life's journey. Known for my strong work ethic and collaborative spirit, I thrive in team environments, always focused on achieving our shared goals. Looking forward to connecting further!</p>
             <div class="tab-titles">
-                <p class = "tab-links active-link">Skills</p>
-                <p class = "tab-links">Experience</p>
-                <p class = "tab-links">Education</p>
+                <p class = "tab-links active-link" onclick ="opentab('skills')">Skills</p>
+                <p class = "tab-links" onclick = "opentab('experience')">Experience</p>
+                <p class = "tab-links" onclick = "opentab('education')">Education</p>
             </div>
-            <div class="tab-contents active-tab">
+            <div class="tab-contents active-tab" id = "skills">
                 <ul>
                     <li><span>UI/UX</span><br>Designing Web/App Interfaces</li>
                     <li><span>Web Development</span><br>Web App Development</li>
                     <li><span>Data Analytics</span><br>Integrating Various Analytics Platforms & Dashboarding</li>
                 </ul>
             </div>
-            <div class="tab-contents">
+            <div class="tab-contents" id = "experience">
                 <ul>
                     <li><span>May 2024 - August 2024</span><br>Engineering Leadership Development Intern @ SIEMENS </li>
                     <li><span>June 2022 - August 2022</span><br>Sales & Marketing Intern @ ActionCoach Business Development</li>
                 </ul>
             </div>
-            <div class="tab-contents">
+            <div class="tab-contents" id = "education">
                 <ul>
                     <li><span>Howard University</span><br>Computer Science Major [May 2025] </li>
                     <li><span>Morehouse College</span><br>Computer Scicence Major [August 2020 - May 2023] </li>
@@ -65,5 +65,18 @@
         </div>
     </div>
    </div>
+   <script> 
+   var tablinks = document.getElementByIdClassName("tab-links");
+   var tabcontents = document.getElementByIdClassName("tab-contents");
+   
+   function opentab(tabname){
+    for(tablink of tablinks){
+        tablink.classList.remove("active-link");
+    }
+    for(tabcontent of tabcontent){
+        tabcontent.classList.remove("active-tab");
+    }
+   }
+</script>
 </body>
 </html>
